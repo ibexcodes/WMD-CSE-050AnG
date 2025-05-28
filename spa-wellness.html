@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa & Wellness | Grand Horizon Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="spa.css">
+</head>
+<body>
+    <!-- Navigation (Same as Homepage) -->
+    <nav>
+        <a href="index.html" class="logo">Grand <span>Horizon</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book.html" class="book-btn">Book Now</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Spa Hero Section -->
+    <section class="spa-hero">
+        <div class="spa-hero-content">
+            <h1>Serenity Awaits</h1>
+            <p>Discover a sanctuary of wellness at Grand Horizon Spa, where ancient healing traditions meet modern luxury for complete rejuvenation.</p>
+        </div>
+    </section>
+    
+    <!-- Spa Intro Section -->
+    <section class="spa-intro">
+        <h2 class="section-title">The Grand Horizon Spa Experience</h2>
+        <div class="spa-intro-content">
+            <p>Nestled within our luxury resort, Grand Horizon Spa offers an oasis of tranquility designed to restore balance to mind, body and spirit. Our expert therapists combine time-honored techniques with innovative wellness approaches, using only the finest organic products to deliver transformative treatments.</p>
+            <p>Whether you seek deep relaxation, revitalization, or targeted therapeutic care, our personalized approach ensures your spa journey meets your unique wellness goals.</p>
+        </div>
+    </section>
+    
+    <!-- Treatments Section -->
+    <section class="treatments-section">
+        <div class="treatments-container">
+            <h2 class="section-title">Signature Treatments</h2>
+            
+            <div class="treatments-tabs">
+                <button class="tab-btn active" data-category="all">All Treatments</button>
+                <button class="tab-btn" data-category="massage">Massages</button>
+                <button class="tab-btn" data-category="facial">Facials</button>
+                <button class="tab-btn" data-category="body">Body Treatments</button>
+                <button class="tab-btn" data-category="wellness">Wellness</button>
+            </div>
+            
+            <div class="treatments-grid">
+                <!-- Treatment 1 -->
+                <div class="treatment-card" data-category="massage">
+                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Horizon Signature Massage" class="treatment-img">
+                    <div class="treatment-content">
+                        <h3>Horizon Signature Massage</h3>
+                        <div class="treatment-duration">
+                            <i class="far fa-clock"></i>
+                            <span>90 minutes</span>
+                        </div>
+                        <p>A bespoke massage blending Swedish, deep tissue and aromatherapy techniques tailored to your needs by our master therapists.</p>
+                        <div class="treatment-price">P380</div>
+                    </div>
+                </div>
+                
+                <!-- Treatment 2 -->
+                <div class="treatment-card" data-category="facial">
+                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Diamond Radiance Facial" class="treatment-img">
+                    <div class="treatment-content">
+                        <h3>Diamond Radiance Facial</h3>
+                        <div class="treatment-duration">
+                            <i class="far fa-clock"></i>
+                            <span>75 minutes</span>
+                        </div>
+                        <p>Luxurious anti-aging treatment featuring diamond-dust exfoliation, collagen infusion and 24k gold application.</p>
+                        <div class="treatment-price">P220</div>
+                    </div>
+                </div>
+                
+                <!-- Treatment 3 -->
+                <div class="treatment-card" data-category="body">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Golden Body Ritual" class="treatment-img">
+                    <div class="treatment-content">
+                        <h3>Golden Body Ritual</h3>
+                        <div class="treatment-duration">
+                            <i class="far fa-clock"></i>
+                            <span>120 minutes</span>
+                        </div>
+                        <p>Full body exfoliation followed by warm oil massage and a nourishing body mask infused with gold particles.</p>
+                        <div class="treatment-price">P550</div>
+                    </div>
+                </div>
+                
+                <!-- Treatment 4 -->
+                <div class="treatment-card" data-category="wellness">
+                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Ayurvedic Rejuvenation" class="treatment-img">
+                    <div class="treatment-content">
+                        <h3>Ayurvedic Rejuvenation</h3>
+                        <div class="treatment-duration">
+                            <i class="far fa-clock"></i>
+                            <span>150 minutes</span>
+                        </div>
+                        <p>Traditional Indian healing combining Abhyanga massage, Shirodhara and herbal steam for complete balance.</p>
+                        <div class="treatment-price">P380</div>
+                    </div>
+                </div>
+                
+                <!-- Treatment 5 -->
+                <div class="treatment-card" data-category="massage">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Hot Stone Therapy" class="treatment-img">
+                    <div class="treatment-content">
+                        <h3>Hot Stone Therapy</h3>
+                        <div class="treatment-duration">
+                            <i class="far fa-clock"></i>
+                            <span>90 minutes</span>
+                        </div>
+                        <p>Warm basalt stones melt away tension while promoting deep relaxation and improved circulation.</p>
+                        <div class="treatment-price">P295</div>
+                    </div>
+                </div>
+                
+                <!-- Treatment 6 -->
+                <div class="treatment-card" data-category="facial">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Caviar Luminescence Facial" class="treatment-img">
+                    <div class="treatment-content">
+                        <h3>Caviar Luminescence Facial</h3>
+                        <div class="treatment-duration">
+                            <i class="far fa-clock"></i>
+                            <span>80 minutes</span>
+                        </div>
+                        <p>Ultra-luxurious treatment featuring caviar extract to nourish skin and restore youthful luminosity.</p>
+                        <div class="treatment-price">P240</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Facilities Section -->
+    <section class="facilities-section">
+        <div class="facilities-container">
+            <h2 class="section-title">Our Wellness Facilities</h2>
+            
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" alt="Thermal Suite" class="facility-img">
+                <div class="facility-content">
+                    <h3>Thermal Suite</h3>
+                    <p>Our state-of-the-art thermal area features a mosaic-tiled Hammam, aromatic steam room, Finnish sauna, and experiential showers. The perfect complement to any treatment or a rejuvenating experience on its own.</p>
+                    <p>Guests can follow the traditional thermal circuit or create their own journey through the contrasting heat experiences, each designed to detoxify, improve circulation and promote deep relaxation.</p>
+                </div>
+            </div>
+            
+            <div class="facility-card">
+                <div class="facility-content">
+                    <h3>Vitality Pool</h3>
+                    <p>The centerpiece of our spa is the stunning indoor-outdoor vitality pool with massage jets, swan neck fountains and a resistance channel. Maintained at body temperature year-round, this aquatic oasis promotes muscle relaxation and stress relief.</p>
+                    <p>Surrounded by lush greenery and featuring panoramic views, our pool area includes heated loungers and a relaxation deck with premium daybeds for post-treatment unwinding.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1556814278-8906c7d3a05f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Vitality Pool" class="facility-img">
+            </div>
+            
+            <div class="facility-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fitness Center" class="facility-img">
+                <div class="facility-content">
+                    <h3>Wellness Studio</h3>
+                    <p>Our fully equipped wellness studio offers daily yoga, Pilates and meditation classes, along with cutting-edge fitness equipment including Peloton bikes, Technogym cardio machines and free weights.</p>
+                    <p>Personal training and wellness consultations are available with our expert instructors to help guests maintain their fitness routine or begin a new wellness journey during their stay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Packages Section -->
+    <section class="packages-section">
+        <div class="packages-container">
+            <h2 class="section-title">Spa Packages</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px;">Our carefully curated packages combine multiple treatments for a complete wellness experience. Perfect for special occasions or simply indulging in extended relaxation.</p>
+            
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Serenity Day Retreat</h3>
+                        <div class="package-price">P350</div>
+                        <div class="package-duration">4 hours</div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Horizon Signature Massage (90 min)</li>
+                            <li><i class="fas fa-check"></i> Customized Facial (60 min)</li>
+                            <li><i class="fas fa-check"></i> Thermal Suite Access</li>
+                            <li><i class="fas fa-check"></i> Light Spa Lunch</li>
+                            <li><i class="fas fa-check"></i> Herbal Tea Selection</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Package 2 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Royal Renewal</h3>
+                        <div class="package-price">P550</div>
+                        <div class="package-duration">6 hours</div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Golden Body Ritual (120 min)</li>
+                            <li><i class="fas fa-check"></i> Diamond Radiance Facial (75 min)</li>
+                            <li><i class="fas fa-check"></i> Scalp & Hand Treatment (45 min)</li>
+                            <li><i class="fas fa-check"></i> Private Spa Suite Access</li>
+                            <li><i class="fas fa-check"></i> Champagne & Chocolates</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Package 3 -->
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>Couples Harmony</h3>
+                        <div class="package-price">P850</div>
+                        <div class="package-duration">3 hours</div>
+                    </div>
+                    <div class="package-content">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Side-by-Side Massages (90 min)</li>
+                            <li><i class="fas fa-check"></i> Private Jacuzzi Session</li>
+                            <li><i class="fas fa-check"></i> Shared Body Scrub</li>
+                            <li><i class="fas fa-check"></i> Sparkling Wine & Fruits</li>
+                            <li><i class="fas fa-check"></i> Romantic Setup</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2>Book Your Spa Experience</h2>
+            <form id="spa-booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="treatment-type">Treatment Type</label>
+                        <select id="treatment-type" class="form-control" required>
+                            <option value="">Select treatment</option>
+                            <option value="signature">Horizon Signature Massage</option>
+                            <option value="diamond">Diamond Radiance Facial</option>
+                            <option value="golden">Golden Body Ritual</option>
+                            <option value="ayurvedic">Ayurvedic Rejuvenation</option>
+                            <option value="hotstone">Hot Stone Therapy</option>
+                            <option value="caviar">Caviar Luminescence Facial</option>
+                            <option value="package">Spa Package</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="treatment-date">Preferred Date</label>
+                        <input type="date" id="treatment-date" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="treatment-time">Preferred Time</label>
+                        <input type="time" id="treatment-time" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="therapist-gender">Therapist Preference</label>
+                        <select id="therapist-gender" class="form-control">
+                            <option value="no-preference">No preference</option>
+                            <option value="female">Female therapist</option>
+                            <option value="male">Male therapist</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-name">Full Name</label>
+                    <input type="text" id="guest-name" class="form-control" required>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guest-email">Email</label>
+                        <input type="email" id="guest-email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-phone">Phone</label>
+                        <input type="tel" id="guest-phone" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="room-number">Room Number (if staying with us)</label>
+                    <input type="text" id="room-number" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-notes">Special Requests/Notes</label>
+                    <textarea id="special-notes" class="form-control" rows="3" placeholder="Medical conditions, areas of focus, allergies, etc."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Reserve Your Treatment</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer (Same as Homepage) -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Grand Horizon</h3>
+                <p>Plot 3476, Block 7</p>
+                <p>+267 71236685</p>
+                <p>info@grandhorizon.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suites</a>
+                <a href="dining.html">Dining</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="spa.html">Spa & Wellness</a>
+                <a href="meeting.html">Meetings & Events</a>
+                <a href="special-offer.html">Special Offers</a>
+                 <a href="events.html">Events</a>
+                <a href="transport.html">Transportation</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+                <p>Subscribe to our newsletter for exclusive offers</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Grand Horizon Hotel. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+    
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom Script -->
+</body>
+</html>
+                

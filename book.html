@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Horizon Hotel | Book Now</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo">Grand <span>Horizon</span></a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book.html" class="book-btn">Book Now</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Page Header -->
+    <div class="page-header">
+        <div>
+            <h1>Reserve Your Stay</h1>
+            <p>Experience luxury at its finest at Grand Horizon Hotel</p>
+        </div>
+    </div>
+    
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <h2 class="section-title">Book Your Room</h2>
+        
+        <div class="booking-form">
+            <h3>Reservation Details</h3>
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="checkin">Check-In Date</label>
+                        <input type="date" id="checkin" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="checkout">Check-Out Date</label>
+                        <input type="date" id="checkout" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adults">Adults</label>
+                        <select id="adults" class="form-control" required>
+                            <option value="1">1 Adult</option>
+                            <option value="2" selected>2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adults</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <select id="children" class="form-control">
+                            <option value="0" selected>No Children</option>
+                            <option value="1">1 Child</option>
+                            <option value="2">2 Children</option>
+                            <option value="3">3 Children</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="room-type">Room Type</label>
+                    <select id="room-type" class="form-control" required>
+                        <option value="">Select Room Type</option>
+                        <option value="deluxe">Deluxe Room - P1 490/night</option>
+                        <option value="executive">Executive Suite - P1 980/night</option>
+                        <option value="presidential">Presidential Suite - P2 400/night</option>
+                        <option value="ocean">Ocean View Room - P1 890/night</option>
+                        <option value="family">Family Suite - P2 140/night</option>
+                        <option value="honeymoon">Honeymoon Suite - P1 999/night</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" class="form-control" rows="3"></textarea>
+                </div>
+                
+                <h3 style="margin-top: 40px;">Guest Information</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Complete Reservation</button>
+            </form>
+        </div>
+        
+        <div class="booking-summary">
+            <h3>Your Booking Summary</h3>
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Deluxe Room" class="room-image">
+            
+            <div class="summary-item">
+                <span>Room Type:</span>
+                <strong id="summary-room">Not selected</strong>
+            </div>
+            
+            <div class="summary-item">
+                <span>Check-In:</span>
+                <strong id="summary-checkin">--/--/----</strong>
+            </div>
+            
+            <div class="summary-item">
+                <span>Check-Out:</span>
+                <strong id="summary-checkout">--/--/----</strong>
+            </div>
+            
+            <div class="summary-item">
+                <span>Nights:</span>
+                <strong id="summary-nights">0</strong>
+            </div>
+            
+            <div class="summary-item">
+                <span>Guests:</span>
+                <strong id="summary-guests">2 Adults</strong>
+            </div>
+            
+            <div class="summary-item">
+                <span>Room Rate:</span>
+                <strong id="summary-rate">P0</strong>
+            </div>
+            
+            <div class="summary-item">
+                <span>Taxes & Fees:</span>
+                <strong id="summary-taxes">P0</strong>
+            </div>
+            
+            <div class="total">
+                <span>Total:</span>
+                <strong id="summary-total">P0</strong>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Grand Horizon</h3>
+                <p>Plot 3476, Block 7</p>
+                <p>Gaborone, Botswana</p>
+                <p>+267 123 6685</p>
+                <p>info@grandhorizon.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suites</a>
+                <a href="amenities.html">Amenities</a>
+                <a href="dining.html">Dining</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="spa-wellness.html">Spa & Wellness</a>
+                <a href="special-offer.html">Special Offers</a>
+                <a href="events.html">Events</a>
+                <a href="meeting.html">Meeting Rooms</a>
+                <a href="transport.html">Transportation</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+                <p>Follow us for exclusive content</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Grand Horizon Hotel. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Booking form functionality
+        const bookingForm = document.getElementById('bookingForm');
+        const roomTypeSelect = document.getElementById('room-type');
+        
+        // Room prices
+        const roomPrices = {
+            'deluxe': 1490,
+            'executive': 1980,
+            'presidential': 2400,
+            'ocean': 1890,
+            'family': 2140,
+            'honeymoon': 1999
+        };
+        
+        // Room images
+        const roomImages = {
+            'deluxe': 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            'executive': 'https://images.unsplash.com/photo-1592229505726-ca121043fa6a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+            'presidential': 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            'ocean': 'https://images.unsplash.com/photo-1566669437685-2c5a585ead15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+            'family': 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+            'honeymoon': 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+        };
+        
+        // Room names
+        const roomNames = {
+            'deluxe': 'Deluxe Room',
+            'executive': 'Executive Suite',
+            'presidential': 'Presidential Suite',
+            'ocean': 'Ocean View Room',
+            'family': 'Family Suite',
+            'honeymoon': 'Honeymoon Suite'
+        };
+        
+        // Update summary when form changes
+        bookingForm.addEventListener('change', updateSummary);
+        bookingForm.addEventListener('input', updateSummary);
+        
+        function updateSummary() {
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+            const adults = document.getElementById('adults').value;
+            const children = document.getElementById('children').value;
+            const roomType = document.getElementById('room-type').value;
+            
+            // Update room image and name
+            if (roomType) {
+                document.querySelector('.room-image').src = roomImages[roomType];
+                document.getElementById('summary-room').textContent = roomNames[roomType];
+                document.getElementById('summary-rate').textContent = 'P' + roomPrices[roomType] + '/night';
+            }
+            
+            // Update dates
+            if (checkin) {
+                document.getElementById('summary-checkin').textContent = formatDate(checkin);
+            }
+            if (checkout) {
+                document.getElementById('summary-checkout').textContent = formatDate(checkout);
+            }
+            
+            // Calculate nights
+            let nights = 0;
+            if (checkin && checkout) {
+                const date1 = new Date(checkin);
+                const date2 = new Date(checkout);
+                const timeDiff = date2.getTime() - date1.getTime();
+                nights = timeDiff / (1000 * 3600 * 24);
+                document.getElementById('summary-nights').textContent = nights;
+            }
+            
+            // Update guests
+            let guestsText = adults + ' Adult' + (adults > 1 ? 's' : '');
+            if (children > 0) {
+                guestsText += ', ' + children + ' Child' + (children > 1 ? 'ren' : '');
+            }
+            document.getElementById('summary-guests').textContent = guestsText;
+            
+            // Calculate total
+            if (roomType && nights > 0) {
+                const subtotal = roomPrices[roomType] * nights;
+                const taxes = subtotal * 0.12; // 12% tax
+                const total = subtotal + taxes;
+                
+                document.getElementById('summary-taxes').textContent = 'P' + taxes.toFixed(2);
+                document.getElementById('summary-total').textContent = 'P' + total.toFixed(2);
+            }
+        }
+        
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('en-US', options);
+        }
+        
+        // Form submission
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('first-name').value;
+            const roomType = document.getElementById('room-type').value;
+            
+            if (!roomType) {
+                alert('Please select a room type');
+                return;
+            }
+            
+            alert(`Thank you, ${firstName}! Your reservation for the ${roomNames[roomType]} has been received. A confirmation has been sent to your email.`);
+           
+        });
+        
+        // Set minimum date for check-in (today)
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('checkin').min = today;
+        
+        // Update checkout min date when checkin changes
+        document.getElementById('checkin').addEventListener('change', function() {
+            document.getElementById('checkout').min = this.value;
+        });
+    </script>
+</body>
+</html>

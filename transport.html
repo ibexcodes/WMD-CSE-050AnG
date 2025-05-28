@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Services | Grand Horizon Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="transport.css">
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html" class="logo">Grand <span>Horizon</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="book.html" class="book-btn">Book Now</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Transport Hero Section -->
+    <section class="transport-hero">
+        <div class="transport-hero-content">
+            <h1>Premium Transport Services</h1>
+            <p>Experience seamless travel with our luxury transportation solutions, designed to complement your Grand Horizon stay with comfort and style.</p>
+        </div>
+    </section>
+    
+    <!-- Transport Options Section -->
+    <section class="transport-section">
+        <h2 class="section-title">Our Transport Solutions</h2>
+        <div class="transport-container">
+            <div class="transport-card">
+                <div class="transport-icon">
+                    <i class="fas fa-plane-arrival"></i>
+                </div>
+                <h3>Airport Transfers</h3>
+                <p>Enjoy stress-free arrivals and departures with our professional airport transfer service.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Meet-and-greet service</li>
+                    <li><i class="fas fa-check"></i> Flight monitoring</li>
+                    <li><i class="fas fa-check"></i> Luxury vehicles</li>
+                    <li><i class="fas fa-check"></i> 24/7 availability</li>
+                </ul>
+            </div>
+            
+            <div class="transport-card">
+                <div class="transport-icon">
+                    <i class="fas fa-shuttle-van"></i>
+                </div>
+                <h3>Resort Shuttles</h3>
+                <p>Complimentary scheduled transportation between our properties and key locations.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Regular scheduled routes</li>
+                    <li><i class="fas fa-check"></i> Wheelchair accessible</li>
+                    <li><i class="fas fa-check"></i> Climate controlled</li>
+                    <li><i class="fas fa-check"></i> Knowledgeable drivers</li>
+                </ul>
+            </div>
+            
+            <div class="transport-card">
+                <div class="transport-icon">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h3>Private Chauffeur</h3>
+                <p>Personalized service with dedicated vehicles and drivers for your exclusive use.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Hourly or daily rates</li>
+                    <li><i class="fas fa-check"></i> Multi-lingual drivers</li>
+                    <li><i class="fas fa-check"></i> Custom itineraries</li>
+                    <li><i class="fas fa-check"></i> Premium fleet</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="transport-container">
+            <div class="transport-card">
+                <div class="transport-icon">
+                    <i class="fas fa-taxi"></i>
+                </div>
+                <h3>City Transfers</h3>
+                <p>Quick and comfortable transportation to any destination within the city.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Flat-rate pricing</li>
+                    <li><i class="fas fa-check"></i> 24/7 availability</li>
+                    <li><i class="fas fa-check"></i> Child seats available</li>
+                    <li><i class="fas fa-check"></i> Quick response</li>
+                </ul>
+            </div>
+            
+            <div class="transport-card">
+                <div class="transport-icon">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <h3>Group Transportation</h3>
+                <p>Comfortable solutions for large groups, events, and corporate transfers.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Various capacity options</li>
+                    <li><i class="fas fa-check"></i> Professional coordination</li>
+                    <li><i class="fas fa-check"></i> Custom branding available</li>
+                    <li><i class="fas fa-check"></i> Competitive rates</li>
+                </ul>
+            </div>
+            
+            <div class="transport-card">
+                <div class="transport-icon">
+                    <i class="fas fa-helicopter"></i>
+                </div>
+                <h3>Helicopter Services</h3>
+                <p>Exclusive aerial transfers for the ultimate in luxury and time efficiency.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Airport to resort transfers</li>
+                    <li><i class="fas fa-check"></i> Scenic tours</li>
+                    <li><i class="fas fa-check"></i> VIP treatment</li>
+                    <li><i class="fas fa-check"></i> Certified pilots</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2>Arrange Your Transportation</h2>
+            <form id="transport-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="service-type">Service Type</label>
+                        <select id="service-type" class="form-control" required>
+                            <option value="">Select a service</option>
+                            <option value="airport">Airport Transfer</option>
+                            <option value="shuttle">Resort Shuttle</option>
+                            <option value="chauffeur">Private Chauffeur</option>
+                            <option value="city">City Transfer</option>
+                            <option value="group">Group Transportation</option>
+                            <option value="helicopter">Helicopter Service</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-type">Vehicle Type</label>
+                        <select id="vehicle-type" class="form-control" required>
+                            <option value="">Select vehicle</option>
+                            <option value="sedan">Luxury Sedan (1-3 passengers)</option>
+                            <option value="suv">Premium SUV (1-5 passengers)</option>
+                            <option value="van">Executive Van (1-8 passengers)</option>
+                            <option value="bus">Mini Bus (9-20 passengers)</option>
+                            <option value="coach">Coach (20+ passengers)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-location">Pickup Location</label>
+                        <input type="text" id="pickup-location" class="form-control" placeholder="Airport, address, or our hotel" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dropoff-location">Drop-off Location</label>
+                        <input type="text" id="dropoff-location" class="form-control" placeholder="Address or our hotel" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup-date">Pickup Date</label>
+                        <input type="date" id="pickup-date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pickup-time">Pickup Time</label>
+                        <input type="time" id="pickup-time" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passengers">Passengers</label>
+                        <input type="number" id="passengers" class="form-control" min="1" value="1" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Special Requests</label>
+                    <textarea id="special-requests" class="form-control" rows="3" placeholder="Child seats, accessibility needs, etc."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guest-info">Guest Information</label>
+                    <input type="text" id="guest-info" class="form-control" placeholder="Your name and contact number" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Request Transportation</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2 class="section-title">Transportation FAQs</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I book airport transfers?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>You can book airport transfers through our online form above, by calling our transport desk at +267 7123 6685, or through our concierge when you make your room reservation. We recommend booking at least 48 hours in advance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What happens if my flight is delayed?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Our airport transfer service includes real-time flight monitoring. Your driver will automatically adjust pickup time for domestic flights delayed up to 2 hours and international flights delayed up to 3 hours at no additional charge.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Are child seats available?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we provide complimentary child safety seats suitable for all ages. Please specify your requirements when booking to ensure proper installation upon arrival.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What is your cancellation policy?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Cancellations made more than 24 hours before scheduled pickup receive a full refund. Cancellations within 24 hours incur a 20% fee. No-shows are charged the full amount.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you provide transportation for guests with disabilities?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. We have wheelchair-accessible vehicles and trained staff to assist guests with special needs. Please inform us of any specific requirements when booking so we can ensure the appropriate vehicle and assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Grand Horizon</h3>
+                <p>Plot 3476, Block 7</p>
+                <p>+267 71236685</p>
+                <p>info@grandhorizon.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="rooms.html">Rooms & Suites</a>
+                <a href="dining.html">Dining</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="spa-wellness.html">Spa & Wellness</a>
+                <a href="special-offer.html">Special Offers</a>
+                <a href="meeting.html">Meeting Rooms</a>
+                <a href="events.html">Events</a>
+                <a href="transport.html">Transportation</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+                <p>Subscribe to our newsletter for exclusive offers</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Grand Horizon Hotel. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+    
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem && item.classList.contains('active')) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('transport-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your transportation request. Our team will contact you shortly to confirm your booking.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
